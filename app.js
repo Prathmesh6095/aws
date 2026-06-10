@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000 // Running on HTTP port 80
 
 // Serve the "completion.html" page at the root path
-app.get('/', (req, res) => {
+app.get('/' , (req, res) => {
   res.sendFile(path.join(__dirname, 'completion.html'));
 });
 
